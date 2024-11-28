@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F9F9F9">
+
+    <!-- Question Text -->
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question goes here"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Question Count -->
+    <TextView
+        android:id="@+id/questionCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question x of y"
+        android:textSize="16sp"
+        android:layout_below="@id/questionText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Options Group -->
+    <RadioGroup
+        android:id="@+id/optionsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionCount"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 4"
+            android:padding="8dp"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <!-- Score Display -->
+    <TextView
+        android:id="@+id/scoreDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score"
+        android:textSize="20sp"
+        android:layout_below="@id/optionsGroup"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="16dp" />
+
+    <!-- Total Attempts -->
+    <TextView
+        android:id="@+id/totalAttempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Attempts: 0"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_below="@id/scoreDisplay"
+        android:layout_centerHorizontal="true" />
+
+    <!-- History Button -->
+    <Button
+        android:id="@+id/historyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View History"
+        android:visibility="gone"
+        android:layout_below="@id/totalAttempts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

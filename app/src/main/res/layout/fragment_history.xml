@@ -1,0 +1,40 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9F9F9">
+
+        <!-- History Text -->
+        <TextView
+            android:id="@+id/historyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="History will appear here"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:padding="16dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <!-- Score Text -->
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/historyTextView"
+            android:layout_marginTop="16dp"
+            android:text="Score: 0"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

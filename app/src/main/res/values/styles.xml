@@ -1,0 +1,8 @@
+<resources>
+    <!-- Define your custom style for buttons here -->
+    <style name="OptionButtonStyle">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:padding">16dp</item>
+    </style>
+</resources>
